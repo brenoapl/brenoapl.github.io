@@ -108,6 +108,27 @@ h2{
     margin-bottom:25px;
 }
 
+.project img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-btn{
+    display:inline-block;
+    background:#0f3b63;
+    color:white;
+    padding:10px 16px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.project-btn:hover{
+    opacity:.9;
+}
+
 footer{
     background:#0f3b63;
     color:white;
@@ -212,18 +233,19 @@ integração de APIs, governança de dados e construção de plataformas analít
 
 <h2>Projetos em Destaque</h2>
 
-<div class="projects">
-
 <div class="project">
+
+<img src="images/custos-absorcao.png"
+     alt="Custos por Absorção">
 
 <div class="project-content">
 
 <h3>Sistema Corporativo de Custos por Absorção</h3>
 
 <p>
-Plataforma corporativa responsável pela distribuição de custos indiretos,
-despesas compartilhadas e apoio ao negócio através de regras de rateio
-implementadas em SQL Server.
+Plataforma corporativa responsável pela distribuição
+de custos indiretos e despesas compartilhadas através
+de regras de rateio implementadas em SQL Server.
 </p>
 
 <br>
@@ -233,6 +255,13 @@ implementadas em SQL Server.
 <p>
 SQL Server • Power BI • DAX • Procedures • Data Warehouse
 </p>
+
+<br>
+
+<a class="project-btn"
+   href="projetos/custos-absorcao.html">
+Ver Projeto
+</a>
 
 </div>
 
