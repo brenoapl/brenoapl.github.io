@@ -1,1 +1,345 @@
-# brenoapl.github.io
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Breno Augusto Pinto de Lima | Data & Analytics Specialist</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f5f7fa;
+    color:#2c3e50;
+    line-height:1.6;
+}
+
+header{
+    background:#0f3b63;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 20px;
+    background:white;
+    color:#0f3b63;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+h2{
+    color:#0f3b63;
+    margin-bottom:20px;
+    border-bottom:3px solid #0f3b63;
+    padding-bottom:10px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.project img{
+    width:100%;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.timeline{
+    border-left:3px solid #0f3b63;
+    padding-left:20px;
+}
+
+.timeline-item{
+    margin-bottom:25px;
+}
+
+footer{
+    background:#0f3b63;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Breno Augusto Pinto de Lima</h1>
+
+<p>
+Especialista em Dados, Analytics e Business Intelligence
+</p>
+
+<br>
+
+<a class="btn" href="https://linkedin.com/in/brenoapl" target="_blank">
+LinkedIn
+</a>
+
+<a class="btn" href="https://github.com/brenoapl" target="_blank">
+GitHub
+</a>
+
+</header>
+
+<div class="container">
+
+<section>
+
+<h2>Sobre Mim</h2>
+
+<p>
+Especialista em Dados e Business Intelligence com experiência em arquitetura de dados,
+Data Warehouses, Data Lakes, Power BI, SQL Server, Python e Analytics.
+
+Atuação em projetos estratégicos envolvendo custos por absorção, recomendação de candidatos,
+integração de APIs, governança de dados e construção de plataformas analíticas corporativas.
+</p>
+
+</section>
+
+<section>
+
+<h2>Competências</h2>
+
+<div class="skills">
+
+<div class="card">
+<h3>Analytics</h3>
+<ul>
+<li>Power BI</li>
+<li>DAX</li>
+<li>Storytelling</li>
+<li>KPIs Executivos</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Data Engineering</h3>
+<ul>
+<li>SQL Server</li>
+<li>PostgreSQL</li>
+<li>Oracle</li>
+<li>Pentaho</li>
+<li>PySpark</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Arquitetura</h3>
+<ul>
+<li>Data Warehouse</li>
+<li>Data Lake</li>
+<li>SSAS</li>
+<li>Modelagem Dimensional</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Governança</h3>
+<ul>
+<li>LGPD</li>
+<li>Qualidade de Dados</li>
+<li>Documentação</li>
+<li>Microsoft Fabric</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Projetos em Destaque</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<div class="project-content">
+
+<h3>Sistema Corporativo de Custos por Absorção</h3>
+
+<p>
+Plataforma corporativa responsável pela distribuição de custos indiretos,
+despesas compartilhadas e apoio ao negócio através de regras de rateio
+implementadas em SQL Server.
+</p>
+
+<br>
+
+<b>Tecnologias:</b>
+
+<p>
+SQL Server • Power BI • DAX • Procedures • Data Warehouse
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<div class="project-content">
+
+<h3>Sistema de Recomendação de Vagas e Candidatos</h3>
+
+<p>
+Modelo analítico para recomendação inteligente de candidatos e vagas,
+utilizando técnicas de similaridade e análise de dados.
+</p>
+
+<br>
+
+<b>Tecnologias:</b>
+
+<p>
+Python • SQL • Machine Learning • Power BI
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<div class="project-content">
+
+<h3>Arquitetura Data Lake Bronze / Silver / Gold</h3>
+
+<p>
+Implementação de arquitetura moderna para ingestão,
+tratamento e disponibilização de dados corporativos.
+</p>
+
+<br>
+
+<b>Tecnologias:</b>
+
+<p>
+PySpark • SQL Server • Data Lake • ETL
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Experiência Profissional</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>2025 - Atual</h3>
+<p>Especialista em Análise de Dados e BI Sênior</p>
+</div>
+
+<div class="timeline-item">
+<h3>2023 - 2025</h3>
+<p>Analista de Business Intelligence Sênior</p>
+</div>
+
+<div class="timeline-item">
+<h3>2022 - 2025</h3>
+<p>Analista de Business Intelligence</p>
+</div>
+
+<div class="timeline-item">
+<h3>2021 - 2022</h3>
+<p>Analista de Business Intelligence</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Certificações</h2>
+
+<ul>
+<li>Microsoft PL-300 - Power BI Data Analyst Associate</li>
+<li>Microsoft DP-600 - Fabric Analytics Engineer Associate</li>
+<li>LGPD</li>
+<li>Cisco Cybersecurity</li>
+</ul>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Breno Augusto Pinto de Lima
+</p>
+
+</footer>
+
+</body>
+</html>
