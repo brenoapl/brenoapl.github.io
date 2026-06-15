@@ -78,31 +78,6 @@ h2{
     box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-    gap:25px;
-}
-
-.project{
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-.project img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    display:block;
-    border-bottom:1px solid #eee;
-}
-
-.project-content{
-    padding:20px;
-}
-
 .timeline{
     border-left:3px solid #0f3b63;
     padding-left:20px;
@@ -112,26 +87,48 @@ h2{
     margin-bottom:25px;
 }
 
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+}
+
+.project{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+transition:all .3s ease;
+}
+
+.project:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
 .project img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+}
+
+.project-content{
+padding:25px;
 }
 
 .project-btn{
-    display:inline-block;
-    background:#0f3b63;
-    color:white;
-    padding:10px 16px;
-    border-radius:5px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-top:10px;
+display:inline-block;
+background:#0f3b63;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:6px;
+font-weight:600;
 }
 
-.project-btn:hover{
-    opacity:.9;
-}
+.project-btn:hover
+
 
 footer{
     background:#0f3b63;
@@ -237,87 +234,108 @@ integração de APIs, governança de dados e construção de plataformas analít
 
 <h2>Projetos em Destaque</h2>
 
+<section>
+
+<h2>Projetos em Destaque</h2>
+
+<div class="projects">
+
+```
 <div class="project">
 
-<img src="images/custos_educação.png"
-     alt="Custos por Absorção">
+    <img src="images/custos-educacao.png" alt="Custos por Absorção">
 
-<div class="project-content">
+    <div class="project-content">
 
-<h3>Sistema Corporativo de Custos por Absorção</h3>
+        <h3>Sistema Corporativo de Custos por Absorção</h3>
 
-<p>
-Plataforma corporativa responsável pela distribuição
-de custos indiretos e despesas compartilhadas através
-de regras de rateio implementadas em SQL Server.
-</p>
+        <p>
+            Plataforma corporativa responsável pela distribuição de custos indiretos e despesas compartilhadas através de regras de rateio implementadas em SQL Server.
+        </p>
 
-<br>
+        <br>
 
-<b>Tecnologias:</b>
+        <b>Tecnologias:</b>
 
-<p>
-SQL Server • Power BI • DAX • Procedures • Data Warehouse
-</p>
+        <p>
+            SQL Server • Power BI • DAX • Procedures • Data Warehouse
+        </p>
 
-<br>
+        <br>
 
-<a class="project-btn"
-   href="projetos/custos-absorcao.html">
-Ver Projeto
-</a>
+        <a class="project-btn" href="projetos/custos-absorcao.html">
+            Ver Projeto
+        </a>
 
-</div>
-
-</div>
-
-<div class="project">
-
-<div class="project-content">
-
-<h3>Sistema de Recomendação de Vagas e Candidatos</h3>
-
-<p>
-Modelo analítico para recomendação inteligente de candidatos e vagas,
-utilizando técnicas de similaridade e análise de dados.
-</p>
-
-<br>
-
-<b>Tecnologias:</b>
-
-<p>
-Python • SQL • Machine Learning • Power BI
-</p>
-
-</div>
+    </div>
 
 </div>
 
 <div class="project">
 
-<div class="project-content">
+    <img src="images/recomendacao.png" alt="Sistema de Recomendação">
 
-<h3>Arquitetura Data Lake Bronze / Silver / Gold</h3>
+    <div class="project-content">
 
-<p>
-Implementação de arquitetura moderna para ingestão,
-tratamento e disponibilização de dados corporativos.
-</p>
+        <h3>Sistema de Recomendação de Vagas e Candidatos</h3>
 
-<br>
+        <p>
+            Modelo analítico para recomendação inteligente de candidatos e vagas utilizando técnicas de similaridade e machine learning.
+        </p>
 
-<b>Tecnologias:</b>
+        <br>
 
-<p>
-PySpark • SQL Server • Data Lake • ETL
-</p>
+        <b>Tecnologias:</b>
+
+        <p>
+            Python • SQL • Machine Learning • Power BI
+        </p>
+
+        <br>
+
+        <a class="project-btn" href="#">
+            Em Construção
+        </a>
+
+    </div>
 
 </div>
 
-</div>
+<div class="project">
+
+    <img src="images/datalake.png" alt="Data Lake">
+
+    <div class="project-content">
+
+        <h3>Arquitetura Data Lake Bronze / Silver / Gold</h3>
+
+        <p>
+            Implementação de arquitetura moderna para ingestão, tratamento e disponibilização de dados corporativos.
+        </p>
+
+        <br>
+
+        <b>Tecnologias:</b>
+
+        <p>
+            PySpark • SQL Server • Data Lake • ETL
+        </p>
+
+        <br>
+
+        <a class="project-btn" href="#">
+            Em Construção
+        </a>
+
+    </div>
 
 </div>
+```
+
+</div>
+
+</section>
+
 
 </section>
 
