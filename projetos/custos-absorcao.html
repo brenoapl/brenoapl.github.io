@@ -1,1 +1,317 @@
 
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projeto | Sistema Corporativo de Custos por Absorção</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f6f9;
+    color:#2c3e50;
+    line-height:1.8;
+}
+
+.hero{
+    background:#0f3b63;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.section{
+    background:white;
+    padding:35px;
+    margin-bottom:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#0f3b63;
+    margin-bottom:20px;
+}
+
+.section img{
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.kpis{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.kpi{
+    background:#0f3b63;
+    color:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.kpi h3{
+    font-size:2rem;
+}
+
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tech span{
+    background:#0f3b63;
+    color:white;
+    padding:8px 12px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#0f3b63;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:6px;
+}
+
+footer{
+    background:#0f3b63;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>Sistema Corporativo de Custos por Absorção</h1>
+
+<p>
+
+Plataforma corporativa desenvolvida para cálculo e distribuição de custos diretos e indiretos através de regras avançadas de rateio, fornecendo rastreabilidade financeira e suporte à tomada de decisão estratégica.
+
+</p>
+
+</div>
+
+<div class="container">
+
+<div class="section">
+
+<h2>Visão Geral</h2>
+
+<p>
+
+O projeto teve como objetivo consolidar informações financeiras e operacionais para permitir a correta atribuição dos custos corporativos aos seus respectivos centros de responsabilidade.
+
+A solução foi construída para suportar diferentes áreas de negócio, incluindo Educação, Tecnologia & Inovação e Saúde & Segurança.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Resultados Obtidos</h2>
+
+<div class="kpis">
+
+<div class="kpi">
+<h3>40+</h3>
+<p>Procedures SQL</p>
+</div>
+
+<div class="kpi">
+<h3>100%</h3>
+<p>Custos Rastreáveis</p>
+</div>
+
+<div class="kpi">
+<h3>3</h3>
+<p>Áreas Estratégicas</p>
+</div>
+
+<div class="kpi">
+<h3>Milhões</h3>
+<p>Registros Processados</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Problema de Negócio</h2>
+
+<p>
+
+Os custos diretos eram facilmente atribuídos aos centros responsáveis.
+
+Entretanto, custos indiretos, despesas compartilhadas, despesas regionais, apoio ao negócio e custos corporativos necessitavam de critérios específicos de distribuição.
+
+Sem esse processo, a organização não conseguia identificar o custo real dos produtos e serviços oferecidos.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Solução Desenvolvida</h2>
+
+<p>
+
+Foi criado um modelo corporativo baseado em Data Warehouse, Procedures SQL Server e Dashboards Power BI.
+
+As regras de negócio foram implementadas em procedimentos especializados responsáveis pela execução dos cálculos de rateio e consolidação financeira.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Arquitetura Analítica</h2>
+
+<p>
+
+O ambiente foi estruturado utilizando modelagem dimensional, permitindo análises rápidas e escaláveis para diferentes perspectivas organizacionais.
+
+</p>
+
+<img src="../images/modelo-dimensional.png">
+
+</div>
+
+<div class="section">
+
+<h2>Motor de Cálculo e Regras de Rateio</h2>
+
+<p>
+
+Foram implementadas dezenas de procedures especializadas responsáveis pela distribuição proporcional dos custos corporativos.
+
+</p>
+
+<img src="../images/procedures-rateio.png">
+
+</div>
+
+<div class="section">
+
+<h2>Dashboards Executivos</h2>
+
+<div class="gallery">
+
+<img src="../images/custos-educacao.png">
+
+<img src="../images/custos-saude.png">
+
+<img src="../images/custos-tecnologia.png">
+
+<img src="../images/ticket-medio.png">
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Tecnologias Utilizadas</h2>
+
+<div class="tech">
+
+<span>SQL Server</span> <span>T-SQL</span> <span>Power BI</span> <span>DAX</span> <span>Power Query</span> <span>Data Warehouse</span> <span>ETL</span> <span>Modelagem Dimensional</span>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Lições Aprendidas</h2>
+
+<ul>
+
+<li>Estruturas de rateio precisam ser auditáveis.</li>
+
+<li>Modelagem dimensional reduz complexidade analítica.</li>
+
+<li>Governança financeira é tão importante quanto a tecnologia.</li>
+
+<li>Dashboards são apenas a camada final de uma solução muito maior.</li>
+
+</ul>
+
+</div>
+
+<a href="../index.html" class="btn">
+
+← Voltar ao Portfólio
+
+</a>
+
+</div>
+
+<footer>
+
+Breno Augusto Pinto de Lima • Data & Analytics Specialist
+
+</footer>
+
+</body>
+
+</html>
