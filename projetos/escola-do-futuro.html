@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Projeto | Escola do Futuro</title>
+<title>Escola do Futuro | Projeto Power BI</title>
 
 <style>
 
@@ -17,93 +17,111 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Segoe UI,sans-serif;
-background:#f4f6f9;
+font-family:'Segoe UI',sans-serif;
+background:#f4f7fb;
 color:#2c3e50;
-line-height:1.8;
+line-height:1.7;
 }
 
-.hero{
-background:#17357a;
+header{
+background:linear-gradient(135deg,#0f3b63,#173f7a);
 color:white;
 padding:80px 20px;
 text-align:center;
 }
 
-.hero h1{
+header h1{
 font-size:3rem;
 margin-bottom:15px;
+}
+
+header p{
+max-width:900px;
+margin:auto;
+font-size:1.1rem;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
-padding:40px 20px;
+padding:50px 20px;
 }
 
 .section{
 background:white;
 padding:35px;
-margin-bottom:30px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,.08);
+margin-bottom:35px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
 .section h2{
+color:#0f3b63;
 margin-bottom:20px;
-color:#17357a;
+padding-bottom:10px;
+border-bottom:3px solid #0f3b63;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
-gap:25px;
+.section p{
+margin-bottom:15px;
 }
 
-.gallery img{
+.section ul{
+padding-left:20px;
+}
+
+.section li{
+margin-bottom:8px;
+}
+
+.dashboard-image{
 width:100%;
-border-radius:10px;
+max-width:1100px;
+display:block;
+margin:25px auto;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
 }
 
-.kpis{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.kpi{
-background:#2fb36d;
-color:white;
-padding:25px;
-border-radius:10px;
+.caption{
 text-align:center;
+font-size:14px;
+color:#666;
+margin-top:10px;
 }
 
-.kpi h3{
-font-size:2rem;
+.tech-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+margin-top:20px;
 }
 
-.tech{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-}
-
-.tech span{
-background:#17357a;
+.tech-grid span{
+background:#0f3b63;
 color:white;
-padding:8px 14px;
-border-radius:30px;
+padding:12px;
+border-radius:8px;
+text-align:center;
+font-weight:600;
 }
 
 .btn{
 display:inline-block;
-padding:12px 20px;
-background:#17357a;
+background:#0f3b63;
 color:white;
+padding:12px 24px;
 text-decoration:none;
-border-radius:6px;
+border-radius:8px;
 margin-top:20px;
+}
+
+footer{
+background:#0f3b63;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
 }
 
 </style>
@@ -112,31 +130,41 @@ margin-top:20px;
 
 <body>
 
-<div class="hero">
+<header>
 
 <h1>Portal Analítico Escola do Futuro</h1>
 
 <p>
 
-Solução analítica para acompanhamento de matrículas,
-perfil dos alunos, desempenho acadêmico e indicadores
-estratégicos da rede Escola do Futuro.
+Plataforma analítica desenvolvida para acompanhamento acadêmico,
+operacional e estratégico das Escolas do Futuro do Estado de Goiás,
+fornecendo indicadores para gestão de alunos, cursos, desempenho,
+vagas e resultados institucionais.
 
 </p>
 
-</div>
+<a href="../index.html" class="btn">
+← Voltar ao Portfólio
+</a>
+
+</header>
 
 <div class="container">
 
 <div class="section">
 
-<h2>Contexto</h2>
+<h2>Contexto do Projeto</h2>
 
 <p>
 
-A Escola do Futuro necessitava de uma plataforma analítica capaz de consolidar informações acadêmicas e administrativas em um único ambiente.
+As Escolas do Futuro do Estado de Goiás representam uma iniciativa
+estratégica voltada para capacitação profissional, inclusão social
+e formação tecnológica.
 
-O objetivo era permitir o acompanhamento da jornada completa dos alunos, desde o acesso até os indicadores de permanência, evasão e êxito.
+O projeto teve como objetivo consolidar dados acadêmicos,
+operacionais e administrativos em uma única plataforma analítica,
+permitindo maior visibilidade sobre os resultados educacionais
+e suporte à tomada de decisão.
 
 </p>
 
@@ -144,59 +172,25 @@ O objetivo era permitir o acompanhamento da jornada completa dos alunos, desde o
 
 <div class="section">
 
-<h2>Objetivos do Projeto</h2>
+<h2>Objetivos da Solução</h2>
 
 <ul>
 
-<li>Monitorar matrículas e acessos.</li>
+<li>Monitorar matrículas e acessos dos alunos.</li>
 
-<li>Analisar perfil dos alunos.</li>
+<li>Analisar perfil dos estudantes.</li>
 
-<li>Acompanhar indicadores de permanência.</li>
+<li>Acompanhar permanência e evasão.</li>
 
-<li>Identificar evasão escolar.</li>
+<li>Mensurar indicadores de êxito acadêmico.</li>
 
-<li>Avaliar desempenho das unidades.</li>
+<li>Controlar oferta de cursos e vagas.</li>
 
-<li>Mensurar taxas de êxito acadêmico.</li>
-
-<li>Suportar decisões estratégicas da gestão educacional.</li>
+<li>Disponibilizar indicadores para gestores e coordenadores.</li>
 
 </ul>
 
 </div>
-
-<div class="section">
-
-<h2>Indicadores Estratégicos</h2>
-
-<div class="kpis">
-
-<div class="kpi">
-<h3>4.872</h3>
-<p>Alunos Ativos</p>
-</div>
-
-<div class="kpi">
-<h3>346</h3>
-<p>Turmas</p>
-</div>
-
-<div class="kpi">
-<h3>99%</h3>
-<p>Permanência</p>
-</div>
-
-<div class="kpi">
-<h3>303</h3>
-<p>Êxito</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="section">
 
 <div class="section">
 
@@ -204,57 +198,21 @@ O objetivo era permitir o acompanhamento da jornada completa dos alunos, desde o
 
 <ul>
 
-<li>Levantamento de requisitos com áreas acadêmicas e administrativas.</li>
+<li>Levantamento de requisitos.</li>
 
-<li>Desenvolvimento da arquitetura analítica.</li>
+<li>Modelagem dimensional.</li>
 
-<li>Modelagem dimensional e definição dos relacionamentos.</li>
+<li>Construção do Data Warehouse.</li>
 
-<li>Construção de processos de tratamento e transformação dos dados.</li>
+<li>Transformações Power Query (M).</li>
 
-<li>Criação de métricas DAX e indicadores estratégicos.</li>
+<li>Criação de métricas DAX.</li>
 
-<li>Desenvolvimento completo da experiência visual (UX/UI).</li>
+<li>Desenvolvimento UX/UI.</li>
 
-<li>Implementação de navegação entre páginas e storytelling analítico.</li>
+<li>Governança de dados.</li>
 
-<li>Governança e padronização dos indicadores institucionais.</li>
-
-<li>Documentação funcional e técnica da solução.</li>
-
-</ul>
-
-</div>
-  
-<div class="section">
-
-<h2>Principais Indicadores</h2>
-
-<ul>
-
-<li>Total de Matrículas</li>
-
-<li>Total de Alunos</li>
-
-<li>Total de Cursos</li>
-
-<li>Total de Turmas</li>
-
-<li>Permanência</li>
-
-<li>Evasão</li>
-
-<li>Êxito</li>
-
-<li>Perfil dos Alunos</li>
-
-<li>Distribuição Geográfica</li>
-
-<li>Vagas Disponíveis</li>
-
-<li>Inscrições por Programa</li>
-
-<li>Desempenho das Escolas</li>
+<li>Documentação técnica.</li>
 
 </ul>
 
@@ -264,15 +222,32 @@ O objetivo era permitir o acompanhamento da jornada completa dos alunos, desde o
 
 <h2>Visão Geral da Plataforma</h2>
 
-<img src="../images/escola-home.png">
+<img src="../images/escola-home.png"
+class="dashboard-image">
+
+<p class="caption">
+
+Tela inicial da plataforma contendo acesso aos módulos analíticos
+e identidade visual institucional.
+
+</p>
 
 </div>
 
 <div class="section">
 
-<h2>Visão Executiva</h2>
+<h2>Visão Geral Institucional</h2>
 
-<img src="../images/escola-visao-geral.png">
+<img src="../images/escola-visao-geral.png"
+class="dashboard-image">
+
+<p>
+
+Painel executivo contendo indicadores estratégicos de acesso,
+matrículas, cursos ofertados, componentes curriculares,
+distribuição geográfica e evolução da operação educacional.
+
+</p>
 
 </div>
 
@@ -280,15 +255,33 @@ O objetivo era permitir o acompanhamento da jornada completa dos alunos, desde o
 
 <h2>Perfil dos Alunos</h2>
 
-<img src="../images/escola-perfil.png">
+<img src="../images/escola-perfil-aluno.png"
+class="dashboard-image">
+
+<p>
+
+Análise demográfica e socioeconômica dos alunos,
+permitindo avaliar faixa etária, sexo, escolaridade,
+benefícios sociais e características da população atendida.
+
+</p>
 
 </div>
 
 <div class="section">
 
-<h2>Indicadores de Desempenho</h2>
+<h2>Desempenho Acadêmico</h2>
 
-<img src="../images/escola-desempenho.png">
+<img src="../images/escola-desempenho.png"
+class="dashboard-image">
+
+<p>
+
+Monitoramento dos principais indicadores acadêmicos,
+incluindo permanência, evasão, acesso e êxito,
+proporcionando acompanhamento contínuo da efetividade educacional.
+
+</p>
 
 </div>
 
@@ -296,81 +289,53 @@ O objetivo era permitir o acompanhamento da jornada completa dos alunos, desde o
 
 <h2>Acompanhamento de Vagas</h2>
 
-<img src="../images/escola-vagas.png">
+<img src="../images/escola-vagas.png"
+class="dashboard-image">
+
+<p>
+
+Painel voltado ao acompanhamento da relação entre vagas,
+inscrições e ocupação dos cursos, permitindo identificar
+oportunidades de expansão e gargalos operacionais.
+
+</p>
 
 </div>
-
-<div class="section">
 
 <div class="section">
 
 <h2>Arquitetura e Modelagem de Dados</h2>
 
-<p>
-
-A solução foi construída utilizando uma arquitetura analítica baseada em modelagem dimensional,
-permitindo alta performance na navegação dos relatórios e padronização dos indicadores estratégicos.
-
-O modelo integra dados acadêmicos, operacionais e administrativos em uma camada única de análise,
-garantindo consistência entre os diferentes painéis e visões de negócio.
-
-</p>
-
-<br>
+<img src="../images/escola-modelagem.png"
+class="dashboard-image">
 
 <p>
 
-A estrutura contempla entidades relacionadas a:
+Foi desenvolvida uma arquitetura analítica corporativa baseada
+em modelagem dimensional, integrando dados acadêmicos,
+administrativos e operacionais.
 
-</p>
-
-<ul>
-
-<li>Alunos</li>
-<li>Escolas</li>
-<li>Cursos</li>
-<li>Turmas</li>
-<li>Programas</li>
-<li>Matrículas</li>
-<li>Componentes Curriculares</li>
-<li>Professores</li>
-<li>Calendário Acadêmico</li>
-<li>Indicadores de Permanência</li>
-<li>Indicadores de Êxito</li>
-<li>Indicadores de Evasão</li>
-
-</ul>
-
-<br>
-
-<img
-src="../images/escolas-modelagem.png"
-alt="Modelagem Dimensional Escola do Futuro"
-style="width:100%; border-radius:10px;">
-
-<br><br>
-
-<p>
-
-A modelagem foi projetada para suportar análises históricas, acompanhamento da jornada dos alunos
-e cruzamento de indicadores educacionais em múltiplas dimensões, possibilitando análises estratégicas
-para tomada de decisão em todos os níveis da instituição.
+A solução contempla entidades de alunos, matrículas,
+escolas, cursos, turmas, componentes curriculares,
+professores e indicadores institucionais.
 
 </p>
 
 </div>
-  
+
+<div class="section">
+
 <h2>Tecnologias Utilizadas</h2>
 
-<div class="tech">
+<div class="tech-grid">
 
 <span>Power BI</span>
 <span>DAX</span>
 <span>Power Query</span>
 <span>SQL Server</span>
+<span>Data Warehouse</span>
 <span>Modelagem Dimensional</span>
-<span>UX/UI</span>
-<span>Storytelling</span>
+<span>UX/UI Analytics</span>
 <span>Governança de Dados</span>
 
 </div>
@@ -383,29 +348,31 @@ para tomada de decisão em todos os níveis da instituição.
 
 <ul>
 
-<li>Centralização dos indicadores acadêmicos.</li>
+<li>Centralização dos indicadores institucionais.</li>
 
-<li>Visibilidade da jornada completa dos alunos.</li>
+<li>Maior velocidade na tomada de decisão.</li>
 
-<li>Monitoramento de evasão e permanência.</li>
+<li>Monitoramento contínuo de evasão e permanência.</li>
 
-<li>Acompanhamento da ocupação das vagas.</li>
+<li>Visibilidade sobre ocupação das vagas.</li>
 
-<li>Suporte à tomada de decisão da gestão educacional.</li>
+<li>Padronização dos indicadores acadêmicos.</li>
 
-<li>Padronização dos indicadores institucionais.</li>
+<li>Apoio estratégico para gestores e coordenadores.</li>
 
 </ul>
 
 </div>
 
-<a class="btn" href="../index.html">
-
-← Voltar ao Portfólio
-
-</a>
-
 </div>
+
+<footer>
+
+<p>
+© Breno Augusto Pinto de Lima | Data & Analytics Specialist
+</p>
+
+</footer>
 
 </body>
 
